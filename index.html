@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .box{
+            width: 100%;
+            background-color: lime;
+            height: 100px;
+            padding: 5px;
+        }
+        .box2{
+            width: 100%;
+            background-color: red;
+            height: 100px;
+            padding: 5px;
+        }
+        @media(max-width: 450px){
+            .container{
+                flex-direction: column;
+            }
+            .box2{
+                color: white;
+                margin: 10px auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi odit ab voluptas aspernatur. </div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus architecto, sed consequuntur </div>
+    </div>
 </body>
 </html>
