@@ -44,7 +44,9 @@
         .image{
             width: 100%;
             height: 300px;
+            margin: 10px 10px;
             background-size: cover;
+            background-position: center;
         }
         .img1{
             background-image: url(lag.jpg);
@@ -56,10 +58,15 @@
         .img3{
             background-image: url(lag.jpg);
         }
+        w
         @media(max-width: 450px){
             .album{
                 flex-direction: column;
-            } 
+            }
+            .image{
+                margin: 10px auto;
+                width: 90%;
+            }
         }
     </style>
 </head>
